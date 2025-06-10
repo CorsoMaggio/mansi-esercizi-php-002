@@ -109,3 +109,30 @@ realizzare un ciclo **for** che:
 - Se il genere e’ M stampare “Buongiorno Sig. $nome”
 - Se e’ F stampare “Buongiorno Sig.ra $nome” .
 - Se non è definito Stampare “$nome ha preferito non specificare."
+
+## **ESERCIZIO 7**
+
+Ripetere il 6 con il foreach;
+
+## **ESERCIZIO 8**
+Utilizzando il costrutto While (Pre-Condizionale), realizzare un sistema di "Aggiungi al carrello" in modo tale da eseguire delle operazioni di somma fino al raggiungimento del budget massimo inserito dall’utente appena eseguirete il programma:
+//Ad Esempio
+
+$budget = 10;// valore preso in input da readline
+
+//Aggiungo articolo 1
+
+$costo_articolo_1 = 5;// valore preso in input da readline
+
+-----
+
+$budget = $budget - costo_articolo_1;
+
+//Budget Rimanente 5 Euro;
+
+//....
+​
+Nel costrutto while, una volta definita la condizione, dovrete di volta in volta chiedere all’utente il costo dell’articolo e visualizzare a schermo il budget Rimanente.
+Nel momento in cui il budget sarà 0 il programma terminerà l'esecuzione.
+ATTENZIONE: Gestire l’eventualità in cui venga scritto un prezzo maggiore del budget a disposizione;
+Il Budget rimanente non potrà mai assumere un valore negativo;
