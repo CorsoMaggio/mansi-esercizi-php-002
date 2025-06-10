@@ -40,3 +40,72 @@ Scrivere tutte le casistiche qui sopra enunciate in cui, dato in input il nome d
 “Hai ordinato Carne con un costo di 10 Euro";
 
 Gestire anche la casistica in cui venga inserita una pietanza non presente nel menu.
+
+## **ESERCIZIO 4**
+
+Presi tutti i numeri da 1 a 10, scrivere un programma che calcoli la somma di tutti i numeri pari tralasciando quelli dispari;
+
+TIPS: Per verificare se un numero è pari o dispari, dovete controllare se il resto della divisione per 2 sia 0 (FALSE) o 1 (TRUE).
+
+```php
+2 Diviso 2 = 1 (con resto 0)  // Numero Pari
+
+3 Diviso 2 = 1 (con resto 1)  // Numero Disapri
+
+13 Diviso 2 = 6 (con resto 1) // Numero Disapri
+```
+
+In php potete utilizzare l’operatore **modulo** **%** per ottenere il resto della divisione, in questo modo**:**
+
+```php
+(2 % 2) == 0  // True perche da resto 0 = Numero Pari
+
+(3 % 2) == 0  // False perche da resto 1 = Numero Disapri
+
+(13 % 2) == 0  // False perche da resto 1 = Numero Disapri
+```
+
+## **ESERCIZIO 5**
+
+Utilizzando la logica appena appresa con l’operatore Modulo, scrivere un programma che stampi in console tutti i numeri da 1 a 30.
+
+- Se il numero e’ multiplo di 3 deve stampare “PHP”;
+- Se multiplo di 5 deve stampare “JAVASCRIPT”;
+- Se multiplo di 3 e 5 (15) deve stampare “Francesco”;
+
+```php
+//Risultato
+
+1,2,PHP,4,Javascript,PHP,7,8,PHP,Javascript,11,PHP,13,14,Francesco,16,17,PHP,19,Javascript,PHP,22,23,PHP,Javascript,26,PHP,28,29,Francesco
+```
+
+## **ESERCIZIO 6**
+
+Dato il seguente Array:
+
+```php
+$arrays = [
+  [
+    'name' => 'Marco',
+    'gender' => 'M',
+  ],
+  [
+    'name' => 'Vanessa',
+    'gender' => 'F',
+  ],
+  [
+    'name' => 'Jack',
+    'gender' => 'M',
+  ],
+  [
+    'name' => 'Mari*',
+    'gender' => '',
+  ],
+];
+```
+
+realizzare un ciclo **for** che:
+
+- Se il genere e’ M stampare “Buongiorno Sig. $nome”
+- Se e’ F stampare “Buongiorno Sig.ra $nome” .
+- Se non è definito Stampare “$nome ha preferito non specificare."
